@@ -8,22 +8,22 @@
 <body>
 <div>
 
-  <table border="2">
+  <table bgcolor="#fffacd" border="4">
 
     <tr>
-      <th scope="col">Color</th>
-      <th scope="col">Seats</th>
-      <th scope="col">Speed</th>
+      <th scope="col" bgcolor="#d2691e">Color</th>
+      <th scope="col" bgcolor="#d2691e" >Seats</th>
+      <th scope="col" bgcolor="#d2691e">Speed</th>
     </tr>
 
 
   <tr th:each="car: ${carList}">
-    <br/>
-    <td th:text="${car.getColor()}"></td>
 
-    <td th:text="${car.getSeats()}"></td>
+    <td style="text-align: center" th:text="${car.getColor()}"></td>
 
-    <td th:text="${car.getSpeed()}"></td>
+    <td style="text-align: center"  th:text="${car.getSeats()}"></td>
+
+    <td style="text-align: center" th:text="${car.getSpeed()}"></td>
 
   </tr>
   </table>
