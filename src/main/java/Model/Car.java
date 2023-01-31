@@ -2,13 +2,13 @@ package Model;
 
 public class Car {
 
-
     private String color;
     private int seats;
     private int speed;
 
     public Car() {
     }
+
     public Car(String color, int seats, int speed) {
         this.color = color;
         this.seats = seats;
